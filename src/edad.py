@@ -1,6 +1,15 @@
 def evaluar(dia, mes, anno):
-    # TODO: Coloca aquí el código del ejercicio 6: Edad
-    return "";
+    from time import localtime
+    t=localtime()
+    diaactual= t.tm_mday
+    mesactual= t.tm_mon
+    annoactual= t.tm_year
+    if mes<mesactual:
+        return "Usted tiene "+(annoactual-anno)+" años"
+    elif mes==mesactual and dia<diaactual:
+        return "Usted tiene "+(annoactual-anno)+" años"
+    else:
+        return "Usted tiene "+ (annoactual-anno-1)+" años"
 
 if __name__ == '__main__':
     print("Ingrese su fecha de nacimiento")

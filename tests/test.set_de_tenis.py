@@ -16,9 +16,46 @@ class TestSetDeTenis(unittest.TestCase):
         valor_esperado = "Aún no termina"
         valor_actual = evaluar(4, 5)
         self.assertEqual(valor_esperado, valor_actual)
+class TestSetDeTenis1(unittest.TestCase):
+    def test_aun_no_termina1(self):
+        valor_esperado = "Aún no termina"
+        valor_actual = evaluar(5, 6)
+        self.assertEqual(valor_esperado, valor_actual)
+class TestSetDeTenis2(unittest.TestCase):
+    def test_gano_b(self):
+        valor_esperado = "Ganó  B"
+        valor_actual = evaluar(5, 7)
+        self.assertEqual(valor_esperado, valor_actual)
+class TestSetDeTenis3(unittest.TestCase):
+    def test_gano_b1(self):
+        valor_esperado = "Ganó  B"
+        valor_actual = evaluar(0, 6)
+        self.assertEqual(valor_esperado, valor_actual)
+class TestSetDeTenis4(unittest.TestCase):
+    def test_invalido(self):
+        valor_esperado = "Inválido"
+        valor_actual = evaluar(3, 7)
+        self.assertEqual(valor_esperado, valor_actual)
+class TestSetDeTenis5(unittest.TestCase):
+    def test_invalido1(self):
+        valor_esperado = "Inválido"
+        valor_actual = evaluar(8, 6)
+        self.assertEqual(valor_esperado, valor_actual)   
+class TestSetDeTenis6(unittest.TestCase):
+    def test_invalido2(self):
+        valor_esperado = "Inválido"
+        valor_actual = evaluar(7,3)
+        self.assertEqual(valor_esperado, valor_actual) 
+class TestSetDeTenis7(unittest.TestCase):
+    def test_gano_a(self):
+        valor_esperado = "Ganó A"
+        valor_actual = evaluar(6,4)
+        self.assertEqual(valor_esperado, valor_actual)
+class TestSetDeTenis8(unittest.TestCase):
+    def test_gano_a1(self):
+        valor_esperado = "Ganó A"
+        valor_actual = evaluar(7,0)
+        self.assertEqual(valor_esperado, valor_actual)    
     
-    # TODO: Agrega tus otros casos de prueba aquí
-    
-
 if __name__ == '__main__':
     unittest.main()

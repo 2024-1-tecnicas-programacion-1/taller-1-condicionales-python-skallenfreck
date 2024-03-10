@@ -1,0 +1,7 @@
+{
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "testing.alwaysRevealTestOnStateChange": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": true
+}
